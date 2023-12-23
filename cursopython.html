@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+        <header id="head">
+            <h1 id="tit">LEARNING CODE</h1>
+            <nav>
+                <ul id="lista">
+                    <li class="LE"><a id="LE" href="index.html">Início</a></li>
+                    <li class="LE"><a id="LE" href="cursos.html">Cursos</a></li>
+                    <li class="LE"><a id="LE" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Comprar curso</h1>
+                <div class="curso-container">
+                        
+                        <div class="curso-desc">
+                            <div class="curso-titulo">Curso de Python: Desenvolvimento Versátil e Poderoso</div>
+                            <div class="curso-descricao">
+                                Aprenda a linguagem de programação Python de maneira prática e versátil. Nosso curso cobre desde o básico até técnicas avançadas, capacitando você a criar aplicações web, scripts automatizados e até mesmo explorar o vasto campo da ciência de dados. Com uma sintaxe clara e poderosa, o Python se tornará sua ferramenta indispensável. Junte-se a nós nesta jornada e torne-se um mestre da programação em Python.                            </div>
+                        </div>
+
+                        <div class="preco"> 3x de R$ 99,00 ou R$ 270,00 à vista</div>
+                        <div id="bdiv"><button type="button" onclick="comprando()">Finalizar compra</button></div>
+                    </div>
+        </main>
+        
+
+    <script>
+        function comprando() {
+            var formpag = Number(prompt('Digite 1 para pagar à vista e 2 para para pagar em 3x'))
+            if (formpag === 1) {
+                var email = (prompt('Digite seu email para o envio do material:'))
+                var preco = 270
+                var saldo = Number(prompt('Digite seu saldo: '))
+                if (saldo >= 270) {
+                    var saldoF = saldo-preco
+                    alert(`Sua compra foi efetuada com sucesso! Enviaremos o material em seu email em até 24 horas!. Seu saldo final é de R$ ${saldoF}`)
+                }
+                else if (saldo <270) {
+                    alert('Não foi possível efetuar a comprar. Motivo: seu saldo é insuficiente!')
+                    
+                }
+            }
+        
+            else if (formpag === 2) {
+                var email = (prompt('Digite seu email para o envio do material:'))
+                var preco = 99
+                var saldo = Number(prompt('Digite seu saldo: '))
+                if (saldo >= 99) {
+                    var saldoF = saldo-preco
+                    alert(`Sua compra foi efetuada com sucesso! Enviaremos o material em seu email em até 24 horas!. Seu saldo final é de R$ ${saldoF}. Restam 2 parcelas`)
+                }
+                else if (saldo <99) {
+                    alert('Não foi possível efetuar a comprar. Motivo: seu saldo é insuficiente!')
+            }
+            }
+
+            else if (formpag != 1 & formpag != 2) {
+                alert('o número escolhido não é válido, escolha novamente.')
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

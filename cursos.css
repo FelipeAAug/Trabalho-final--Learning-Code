@@ -1,0 +1,118 @@
+body {
+    padding-top: 80px;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg , #330158 ,#170024 );
+    margin: -7.6px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+#tit {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#lista {
+    text-decoration: none;
+    font-size: 23px;
+    margin-right: 17px;
+    margin-top: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+    
+}
+#LE {
+    text-decoration: none;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.LE {
+    transition: transform o.8s ease-in-out;
+}
+.LE:hover {
+    transform:  scale(1.08);
+}
+#cursoh2 {
+    text-align: center;
+    font-size: 60px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#curso-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.cursob {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: rgb(113, 64, 146);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cursob:hover {
+    transform: scale(1.01);
+}
+.cursob img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.desc {
+    padding:15px
+}
+#curso-container h3 {
+    margin-top: 0;
+}
+#curso-container p {
+    margin: 10px 0;
+}
+.comprar {
+    border: none;
+    background-color: #cea5ee;
+    border-bottom: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    color: white;
+    
+}
+.comprar:hover {
+    background-color: #872ace;
+    color: white;
+}
+#divcom {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
+}

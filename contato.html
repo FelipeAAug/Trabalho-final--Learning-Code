@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNING CODE</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header id="head">
+        <h1 id="tit">LEARNING CODE</h1>
+        <nav>
+            <ul id="lista">
+                <li class="LE"><a id="LE" href="index.html">Início</a></li>
+                <li class="LE"><a id="LE" href="cursos.html">Cursos</a></li>
+                <li class="LE"><a id="LE" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="name">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="name">Mensagem</label>
+            <textarea type="message" id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Enviar</button>
+
+        </form>
+        <div id="resultado"></div>
+    </main>
+    <script src="contato.js"></script>
+</body>
+</html>
